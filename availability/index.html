@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanickBoi | Availability</title>
+    <link rel="stylesheet" href="../styler/variables.css">
+    <link rel="stylesheet" href="../styler/main.css">
+    <link rel="stylesheet" href="../styler/availability.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Availability (For Freelancing)</h1>
+    </header>
+    <div id="global"></div>
+    <script>
+  fetch("../global.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("global").innerHTML = data);
+</script>
+    <section>
+      <h2>Weekly Schedule</h2>
+      <table>
+        <tr><th>Day</th><th>Availability</th></tr>
+        <tr><td>Monday</td><td class="av">✓</td></tr>
+        <tr><td>Tuesday</td><td class="av">✓</td></tr>
+        <tr><td>Wednesday</td><td class="av">✓</td></tr>
+        <tr><td>Thursday</td><td class="unav">✕</td></tr>
+        <tr><td>Friday</td><td class="av">✓</td></tr>
+        <tr><td>Weekends</td><td class="unav">✕</td></tr>
+      </table>
+    </section>
+    <section>
+      <h2>Holiday Schedules</h2>
+      <table>
+        <tr><th>Holiday</th><th>Availability</th></tr>
+        <tr><td>Christmas</td><td class="unav">✕</td></tr>
+        <tr><td>Easter</td><td class="av">✓</td></tr>
+        <tr><td>Summer Weekdays</td><td class="av">✓</td></tr>
+        <tr><td>Summer Weekends</td><td class="unav">✕</td></tr>
+      </table>
+    </section>
+  </body>
+</html>

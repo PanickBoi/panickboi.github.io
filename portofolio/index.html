@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanickBoi | Portfolio</title>
+    <link rel="stylesheet" href="../styler/variables.css">
+    <link rel="stylesheet" href="../styler/main.css">
+    <link rel="stylesheet" href="../styler/portofolio.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+    <div id="global"></div>
+    <script>
+  fetch("../global.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("global").innerHTML = data);
+</script>
+    <div class="projects">
+      <div class="card">
+        <h3><u>A Roblox Game</u></h3>
+        <img src="../source/image/Infinitum.webp" alt="Logo">
+        <h3
+          style="background: -webkit-linear-gradient(45deg,#00f2ff 0%,#00ff8c 50%, #03a300 60%);
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">Infinitum Obby</h3>
+        <hr>
+        <p>A randomly-generated obby spanning multiple
+          ever-increasing-difficulty stages with the added twist of a player
+          tool-shop
+        </p>
+        <hr>
+        <a
+          href="https://www.roblox.com/games/124529590680421/Infinitum-Obby">You
+          can play here</a>
+      </div>
+      <div class="card">
+        <h3><u>Gun System</u></h3>
+        <img src="../source/image/GunSystem.webp"
+          alt="Aiming at dude with the R-22">
+        <h3>My Personal Gun System Framework</h3>
+        <hr>
+        <p>A gun system that includes:
+          <ul style="text-align: left;">
+            <li>  <a
+                href="../source/image/AttachmentSystem.webp">A functional attachment system</a></li><br>
+            <li> <a
+                href="../source/image/GunSettings.webp">
+                Easy-to-configure Settings
+              </a></li><br>
+            <li> <a href="../source/image/GrenadeSystem.webp">Grenade System with custom explosion logic</a></li><br>
+            <li><a href="../source/image/VestSystem.webp">Vest System</a></li><br>
+          </ul>
+        </p>
+        <hr>
+      </div>
+      <div class="card">
+        <h3><u>Biblically Inaccurate Datapack</u></h3>
+        <img src="../source/image/bi.png" alt="Logo">
+        <h3
+          style="background: -webkit-linear-gradient(45deg,#00f2ff 0%,#00ff8c 50%, #03a300 60%);
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">"A New World"</h3>
+        <hr>
+        <p>A Datapack that makes minecraft harder by implementing Souls-like mechanics and a plethora of new bosses
+        </p>
+        <hr>
+        <a
+          href="https://modrinth.com/datapack/biblically-inaccurate">You
+          can download here</a>
+      </div>
+      <div class="card">
+        <h3><u>Porject Force Datapack</u></h3>
+        <img src="../source/image/vf.png" alt="Logo">
+        <h3
+          style="background: -webkit-linear-gradient(45deg,#00f2ff 0%,#00ff8c 50%, #03a300 60%);
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">"Destruction Incarnate"</h3>
+        <hr>
+        <p>A Datapack that implements the powerful Viltrumites from the Comics & Prime Series "Invincible"
+        </p>
+        <hr>
+        <a
+          href="https://modrinth.com/datapack/project-force">You
+          can download here</a>
+      </div>
+    </div>
+  </body>
+</html>

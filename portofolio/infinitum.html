@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanickBoi | Infinitum Obby</title>
+    <link rel="stylesheet" href="../styler/variables.css">
+    <link rel="stylesheet" href="../styler/main.css">
+</head>
+<body>
+    <header>
+      <h1 style="background: -webkit-linear-gradient(45deg,#00f2ff 0%,#00ff8c 50%, #03a300 60%);
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">
+      <u>Infinitum Obby</u></h1>
+    </header>
+    <div id="global"></div>
+    <script>
+  fetch("../global.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("global").innerHTML = data);
+</script>
+</body>
+</html>

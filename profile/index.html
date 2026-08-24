@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanickBoi | Profile</title>
+    <link rel="stylesheet" href="../styler/variables.css">
+    <link rel="stylesheet" href="../styler/main.css">
+    <link rel="stylesheet" href="../styler/profile.css">
+  </head>
+  <body>
+    <header>
+      <h1>PanickBoi</h1>
+      <p>Welcome to my personal page</p>
+    </header>
+    <div id="global"></div>
+    <script>
+  fetch("../global.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("global").innerHTML = data);
+    document.addEventListener('DOMContentLoaded', () => {
+  const currentYear = new Date().getFullYear();
+  
+  // Find all elements with class "auto-years"
+  document.querySelectorAll('.auto-years').forEach(element => {
+    const startYear = parseInt(element.getAttribute('data-start-year'), 10);
+    const years = currentYear - startYear;
+    
+    // Display result (e.g., "6 years" or "1 year")
+    element.textContent = `${years} ${years === 1 ? 'year' : 'years'}`;
+  });
+});
+</script>
+  </script>
+  <section class="profile">
+    <br><br>
+    <img src="../source/image/pfp.webp" alt="My profile picture"><br><br>
+    <h1>PanickBoi</h1>
+    <hr>
+    <h3>Game Developer & Programmer</h3>
+    <hr>
+    <p><i>I love making games,building systems and creating fun
+        experiences</i></p>
+  </section>
+  <section id="experience">
+    <h1 style="text-align: center;color: gold;"><u>Experience</u></h1>
+    <hr>
+    <ul>
+      <li>
+        <h3 style="color: aquamarine;"><u>Programming</u></h3>
+        <ul>
+          <li>
+            <dl>
+              <dt><u><span class="auto-years" data-start-year="2021"></span>
+                  Years</u> of Experience with <span
+                  style="color: aqua;">Luau</span> (Roblox)</dt>
+              <dd>> Creating games</dd>
+              <dd>> Making free-to-use assets</dd>
+              <dd>> Doing Commisions</dd>
+            </dl>
+          </li><br>
+          <li>
+            <dl>
+              <dt><u><span class="auto-years" data-start-year="2022"></span>
+                  Years</u> of Experience with <span
+                  style="background: -webkit-linear-gradient(45deg,#1d59ff 0%,#1d59ff 50%, #f2ff00 60%);
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">Python</span> </dt>
+              <dd>> Small,personal use scripts</dd>
+              <dd>> Discord bot backend</dd>
+              <dd>> Automating stuff</dd>
+            </dl>
+          </li><br>
+          <li>
+            <dl>
+              <dt><u><span class="auto-years" data-start-year="2022"></span>
+                  Years</u> of Experience with <span
+                  style="color: rgb(255, 98, 0);">HTML</span>,<span
+                  style="color: rgb(0, 89, 255);">CSS</span> & <span
+                  style="color: orange;">Java</span> </dt>
+              <dd>> Making websites (like this one)</dd>
+              <dd>> Experimenting with modding (Minecraft <span
+                  style="color: orange;">Java</span>)</dd>
+              <dd>> Small,scripts for personal use (<span
+                  style="color: orange;">Java</span>)</dd>
+            </dl>
+          </li><br>
+          <li>
+            <dl>
+              <dt><u><span class="auto-years" data-start-year="2024"></span>
+                  Years</u> of Experience with <span
+                  style="color: rgb(37, 116, 0);">mcfunction</span> </dt>
+              <dd>> Changing Minecraft's Progression</dd>
+              <dd>> Creating Numerous Datapacks</dd>
+              <dd>> Modifying Private Servers</dd>
+            </dl>
+          </li><br>
+          <li>
+            <dl>
+              <dt><u><span class="auto-years" data-start-year="2025"></span>
+                  Years</u> of Experience with <span
+                  style="background: -webkit-linear-gradient(45deg,#00ffff 0%, #008811 70%);
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">C++ & Assembly</span> </dt>
+              <dd>> Greek Card Game (Xeri) (<span
+                  style="color: rgb(0, 225, 255);">C++</span>)</dd>
+              <dd>> University Assignments</dd>
+              <dd>> Learning Low-level programming (<span
+                  style="color: rgb(2, 130, 49);">Assembly</span>)</dd>
+            </dl>
+          </li><br>
+        </ul>
+
+      </ul>
+      <hr>
+    </section>
+    <section id="techstack">
+      <h1 style="text-align: center;color: orangered;"><u>Tech Stack</u></h1>
+      <ul>
+        <div>
+        <img src="../source/image/vscode.png" alt="Visual Studio Code">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg"
+          width="20%" height="auto"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+          <img src="../source/image/n++.webp">
+          <img src="../source/image/blockbench_icon.png">
+          </div>
+      </ul>
+      <hr>
+    </section>
+  </body>
+</html>

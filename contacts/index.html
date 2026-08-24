@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanickBoi | Contacts</title>
+    <link rel="stylesheet" href="../styler/variables.css">
+    <link rel="stylesheet" href="../styler/main.css">
+
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+    <div id="global"></div>
+    <script>
+  fetch("../global.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("global").innerHTML = data);
+</script>
+    <section>
+      <h2>Where you can Find me:</h2>
+      <p>Email: panickboibusiness@gmail.com</p>
+      <p>Discord: panickboi</p>
+      <p>GitHub: <a class="link" href="#"
+          target="_blank">github.com/PanickBoi</a></p>
+    </section>
+  </body>
+</html>
